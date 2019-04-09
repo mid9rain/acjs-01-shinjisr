@@ -1,0 +1,14 @@
+{
+  "name": "astrocamp-js-homework01",
+  "version": "1.0.0",
+  "description": "AstroCamp JS home work 01",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -b"
+  },
+  "author": "Su Tai An",
+  "private": true,
+  "dependencies": {
+    "jest": "^24.7.1"
+  }
+}
