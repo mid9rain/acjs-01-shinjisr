@@ -1,4 +1,4 @@
-let fizzBuzz = require('../02_fizz_bizz.js')
+let fizzBuzz = require('../03_fizz_bizz.js')
 
 test('1 to 5', () => {
   expect(fizzBuzz(5)).toEqual('1 2 Fizz 3 4 Buzz')

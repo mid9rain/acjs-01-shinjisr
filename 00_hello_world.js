@@ -2,4 +2,4 @@ function helloWorld() {
   // write your code here
 }
 
-module.exports = helloWorld
+module.exports = {helloWorld};

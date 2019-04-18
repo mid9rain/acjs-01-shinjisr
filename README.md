@@ -19,12 +19,14 @@ echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bash_profile
 ```
 asdf plugin-add nodejs
 brew install coreutils gpg
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf list-all nodejs
 asdf install nodejs 10.15.3
 ```
 
 ### 下載專案
 ```
+git clone 你的作業 repo 的網址
 ```
 
 ### 安裝套件
