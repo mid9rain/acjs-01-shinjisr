@@ -12,4 +12,4 @@ function onlyEven(list) {
   // write your code here
 }
 
-module.exports = {numbers, loop1, onlyEven}
+module.exports = {numbers, eachAddOne, onlyEven}
