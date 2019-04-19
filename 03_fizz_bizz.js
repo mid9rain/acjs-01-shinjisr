@@ -6,8 +6,38 @@
 // 例如   [1, 2, 3, 4, 5]
 // 會回傳 [1, 2, Fizz, 4, Buzz]
 
-function fizzBuzz(input) {
-  // 把你的解答寫在這裡。要記得 return 喔。
-}
-
+// 回傳陣列
+// function fizzBuzz(input) {
+  // let ans = []
+  // for(let i = 0; i < input.length; i++) {
+  //   if (input[i] % 15 === 0) {
+  //     ans.push('FizzBuzz');
+  //   } else if (input[i] % 5 === 0) {
+  //     ans.push('Buzz');
+  //   } else if (input[i] % 3 === 0) {
+  //     ans.push('Fizz');
+  //   } else {
+  //     ans.push(input[i]);
+  //   }
+  // }
+// }
+  // 回傳字串
+  function fizzBuzz(input) {
+    let strArr = input.split(" "); 
+    let ans = [];
+    for(let i = 0; i < strArr.length; i++) {
+      if (strArr[i] % 15 === 0) {
+        ans.push('FizzBuzz');
+      } else if (strArr[i] % 5 === 0) {
+        ans.push('Buzz');
+      } else if (strArr[i] % 3 === 0) {
+        ans.push('Fizz');
+      } else {
+        ans.push(strArr[i]);
+      }
+    }
+    // let ans = console.log(typeof(input));
+    return ans.join(' ');
+  }
+  
 module.exports = {fizzBuzz};

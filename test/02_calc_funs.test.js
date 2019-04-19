@@ -1,4 +1,4 @@
-let {add, min, mul, div} = require('../02_calc_funs.js')
+let {add, sub, mul, div} = require('../02_calc_funs.js')
 
 test('test add', () => {
   expect(add(1, 3)).toEqual(4)
@@ -6,10 +6,10 @@ test('test add', () => {
   expect(add(9, -10)).toEqual(-1)
 })
 
-test('test min', () => {
-  expect(min(1, 3)).toEqual(-2)
-  expect(min(5, 2)).toEqual(3)
-  expect(min(9, 2)).toEqual(7)
+test('test sub', () => {
+  expect(sub(1, 3)).toEqual(-2)
+  expect(sub(5, 2)).toEqual(3)
+  expect(sub(9, 2)).toEqual(7)
 })
 
 test('test mul', () => {
