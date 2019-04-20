@@ -23,21 +23,21 @@
 // }
   // 回傳字串
   function fizzBuzz(input) {
-    let strArr = input.split(" "); 
     let ans = [];
-    for(let i = 0; i < strArr.length; i++) {
-      if (strArr[i] % 15 === 0) {
+    for(let i = 1; i <= input; i++) {
+      if (i % 15 === 0) {
         ans.push('FizzBuzz');
-      } else if (strArr[i] % 5 === 0) {
+      } else if (i % 5 === 0) {
         ans.push('Buzz');
-      } else if (strArr[i] % 3 === 0) {
+      } else if (i % 3 === 0) {
         ans.push('Fizz');
       } else {
-        ans.push(strArr[i]);
+        ans.push(i);
       }
     }
     // let ans = console.log(typeof(input));
-    return ans.join(' ');
+    ansStr = ans.join(' ');
+    return ansStr
   }
   
 module.exports = {fizzBuzz};
