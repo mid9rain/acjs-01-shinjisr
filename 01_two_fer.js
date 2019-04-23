@@ -3,10 +3,8 @@
 // 如果 name 是其它名字的話，那回傳 "One for 名字, one for me"
 function twoFer(name) {
   let ans = '';
-  if(name === undefined){
-    ans = "One for you, one for me"
-  } else if(name === null) {
-    ans = "One for you, one for me"
+  if(name === undefined || name === null){
+    ans = 'One for you, one for me'
   } else {
     ans = `One for ${name}, one for me`
   }
